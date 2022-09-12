@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c437d28f-a1cd-44d6-95a1-e0c295b4457e" name="Changes" comment="" />
+    <list default="true" id="c437d28f-a1cd-44d6-95a1-e0c295b4457e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/baitap1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baitap1/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +58,8 @@
       <workItem from="1662824366962" duration="52000" />
       <workItem from="1662824433605" duration="71000" />
       <workItem from="1662824520794" duration="87000" />
-      <workItem from="1662824859291" duration="9970000" />
+      <workItem from="1662824859291" duration="12100000" />
+      <workItem from="1662952318894" duration="5088000" />
     </task>
     <servers />
   </component>

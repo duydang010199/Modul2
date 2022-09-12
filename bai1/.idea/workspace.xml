@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4c2584-90b5-4a98-9917-c6d16a7228ba" name="Changes" comment="SystemTime.java">
-      <change afterPath="$PROJECT_DIR$/src/khaibaosudungbien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/phuongtrinhbac1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tinhnamnhuan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tinhsongaytrongthang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="bf4c2584-90b5-4a98-9917-c6d16a7228ba" name="Changes" comment="Sudungtoantu.java">
+      <change beforePath="$PROJECT_DIR$/../out/production/Modul2/khaibaosudungbien.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +20,15 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f661f0f5-3766-40e9-8676-55c8a56cd2ac" />
+        <option name="url" value="https://github.com/duydang010199/Modul2.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,49 +44,30 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/OneDrive/Máy tính/Modul2/bai1_1&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.tinhnamnhuan">
-    <configuration name="com.codegym.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.codegym.Main" />
-      <module name="bai1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.codegym.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="khaibaosudungbien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="khaibaosudungbien" />
+  <component name="RunManager" selected="Application.Tinhnamnhuan">
+    <configuration name="Phuongtrinhbac1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Phuongtrinhbac1" />
       <module name="bai1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="phuongtrinhbac1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="phuongtrinhbac1" />
+    <configuration name="Tinhnamnhuan" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tinhnamnhuan" />
       <module name="bai1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tinhnamnhuan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tinhnamnhuan" />
-      <module name="bai1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tinhsongaytrongthang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tinhsongaytrongthang" />
+    <configuration name="Tinhsongaytrongthang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tinhsongaytrongthang" />
       <module name="bai1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -91,11 +75,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.tinhnamnhuan" />
-        <item itemvalue="Application.tinhsongaytrongthang" />
-        <item itemvalue="Application.phuongtrinhbac1" />
-        <item itemvalue="Application.khaibaosudungbien" />
-        <item itemvalue="Application.com.codegym.Main" />
+        <item itemvalue="Application.Tinhsongaytrongthang" />
+        <item itemvalue="Application.Phuongtrinhbac1" />
       </list>
     </recent_temporary>
   </component>
@@ -110,6 +91,22 @@
       <workItem from="1662625277501" duration="1144000" />
       <workItem from="1662652579937" duration="241000" />
       <workItem from="1662685788992" duration="7394000" />
+      <workItem from="1662696576900" duration="64000" />
+      <workItem from="1662696680554" duration="9000" />
+      <workItem from="1662696946567" duration="1488000" />
+      <workItem from="1662822370302" duration="29000" />
+      <workItem from="1662822452182" duration="42000" />
+      <workItem from="1662822530883" duration="12000" />
+      <workItem from="1662822567186" duration="456000" />
+      <workItem from="1662823041526" duration="205000" />
+      <workItem from="1662823255085" duration="58000" />
+      <workItem from="1662823319845" duration="306000" />
+      <workItem from="1662823913348" duration="42000" />
+      <workItem from="1662824039994" duration="34000" />
+      <workItem from="1662824157458" duration="16000" />
+      <workItem from="1662824259511" duration="16000" />
+      <workItem from="1662824348316" duration="17000" />
+      <workItem from="1662824420721" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="SystemTime.java">
       <created>1662625562506</created>
@@ -125,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662686741470</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Sudungtoantu.java">
+      <created>1662823265803</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662823265803</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SystemTime.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="SystemTime.java" />
+    <MESSAGE value="Sudungtoantu.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sudungtoantu.java" />
   </component>
 </project>

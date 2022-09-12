@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class tinhnamnhuan {
+public class Tinhnamnhuan {
     public static void main(String[] args) {
         // Khai báo biến
         Scanner scanner = new Scanner(System.in);
