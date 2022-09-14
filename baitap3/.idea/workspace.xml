@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52708a87-ca42-464e-9c34-2363ec719987" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baitap3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chuyendoinhietdo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Daonguocmang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DemSVThiDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GiaTriLonNhatMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GiaTriNhoNhatMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Giatritrongmang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GopMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PTLonNhatMang2Chieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ThemPTMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/XoaPTMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap_2/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EfDT04QavLyF0HcRTMD50Tkvq4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="btthem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="btthem" />
+      <module name="baitap3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.btthem" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52708a87-ca42-464e-9c34-2363ec719987" name="Changes" comment="" />
+      <created>1662977751098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662977751098</updated>
+      <workItem from="1662977752666" duration="545000" />
+      <workItem from="1662995726306" duration="1860000" />
+      <workItem from="1663031377568" duration="136000" />
+      <workItem from="1663031574922" duration="18356000" />
+      <workItem from="1663079001828" duration="1986000" />
+      <workItem from="1663117710589" duration="6778000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
