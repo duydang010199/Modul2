@@ -24,9 +24,10 @@ public class PTLonNhatMang2Chieu {
             }
             System.out.println("");
         }
-        System.out.println(Arrays.toString(maxMin(array, row, column)));
+        maxMin(array, row, column);
+//        System.out.println(Arrays.toString(maxMin(array, row, column)));
     }
-    public static Integer[][] maxMin(Integer[][] arr,int row, int column){
+    public static void maxMin(Integer[][] arr,int row, int column){
         int max = arr[0][0];
         int min = arr[0][0];
         for (int i = 0; i < row; i++){
@@ -42,7 +43,5 @@ public class PTLonNhatMang2Chieu {
         }
         System.out.println("Giá trị lớn nhất là: " + max);
         System.out.println("Giá trị nhỏ nhất là: " + min);
-        return arr;
-
     }
 }

@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52708a87-ca42-464e-9c34-2363ec719987" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SoLanXuatHienCKT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TinhTongCot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../baitap1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../baitap2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PTLonNhatMang2Chieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PTLonNhatMang2Chieu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XoaPTMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XoaPTMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TinhTongCot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TinhTongCot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../baitap_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap_2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +88,7 @@
       <workItem from="1663031574922" duration="18356000" />
       <workItem from="1663079001828" duration="1986000" />
       <workItem from="1663117710589" duration="6778000" />
-      <workItem from="1663125099571" duration="12177000" />
+      <workItem from="1663125099571" duration="13611000" />
     </task>
     <servers />
   </component>

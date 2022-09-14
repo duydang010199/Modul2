@@ -28,13 +28,17 @@ public class TinhTongCot {
             System.out.print("Nhập cột muốn tính tổng: ");
             colD = sc.nextInt();
         }
-        float totalColumn = 0;
+        totalColumn(arr, colD, rows);
+        totalDiagonalLine(arr, columns, rows);
+    }
+    public static void totalColumn(Integer[][] arr,int colD, int rows){
+        float t = 0;
         for (int i = 0; i < rows; i++){
-            totalColumn += arr[i][colD];
+            t += arr[i][colD];
         }
-        System.out.println("Tổng cột thứ " + colD + " là " + totalColumn);
-
-        // Tính tổng đường chéo chính
+        System.out.println("Tổng cột thứ " + colD + " là " + t);
+    }
+    public static void totalDiagonalLine(Integer[][] arr, int columns, int rows){
         float totalDia = 0;
         if (columns == rows){
             for (int i = 0; i < rows; i++){
