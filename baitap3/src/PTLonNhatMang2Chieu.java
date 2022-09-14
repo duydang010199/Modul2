@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class PTLonNhatMang2Chieu {
@@ -16,26 +17,32 @@ public class PTLonNhatMang2Chieu {
             }
         }
 
-
+        // Hiển thì hàng và cột của mảng
         for (int i = 0; i < row; i++){
             for (int j = 0; j < column; j++){
                 System.out.print(array[i][j] + " ");
             }
             System.out.println("");
         }
-        int max = array[0][0];
-        int min = array[0][0];
+        System.out.println(Arrays.toString(maxMin(array, row, column)));
+    }
+    public static Integer[][] maxMin(Integer[][] arr,int row, int column){
+        int max = arr[0][0];
+        int min = arr[0][0];
         for (int i = 0; i < row; i++){
             for (int j = 0; j < column; j++){
-                if (array[i][j] > max){
-                    max = array[i][j];
+                if (arr[i][j] > max){
+                    max = arr[i][j];
                 }
-                if (array[i][j] < min){
-                    min = array[i][j];
+                if (arr[i][j] < min){
+                    min = arr[i][j];
                 }
             }
+
         }
         System.out.println("Giá trị lớn nhất là: " + max);
         System.out.println("Giá trị nhỏ nhất là: " + min);
+        return arr;
+
     }
 }

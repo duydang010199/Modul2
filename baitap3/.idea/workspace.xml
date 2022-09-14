@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52708a87-ca42-464e-9c34-2363ec719987" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baitap3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chuyendoinhietdo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Daonguocmang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DemSVThiDo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GiaTriLonNhatMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GiaTriNhoNhatMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Giatritrongmang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GopMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PTLonNhatMang2Chieu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ThemPTMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/XoaPTMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SoLanXuatHienCKT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TinhTongCot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../baitap1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../baitap2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PTLonNhatMang2Chieu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PTLonNhatMang2Chieu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XoaPTMang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XoaPTMang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../baitap_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap_2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,23 +38,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="btthem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="btthem" />
       <module name="baitap3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,6 +90,7 @@
       <workItem from="1663031574922" duration="18356000" />
       <workItem from="1663079001828" duration="1986000" />
       <workItem from="1663117710589" duration="6778000" />
+      <workItem from="1663125099571" duration="12177000" />
     </task>
     <servers />
   </component>
