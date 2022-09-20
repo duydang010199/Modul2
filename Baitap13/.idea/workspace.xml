@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="579306f3-5994-4104-8ed3-532888137c10" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Baitap13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bai1/TimChuoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bai2/RecursiveBinary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bai3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ThucHanh1/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ThucHanh2/AlgorithmComplexityTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EwXK0wIt5c5mbic2k1Ds7142nS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="579306f3-5994-4104-8ed3-532888137c10" name="Changes" comment="" />
+      <created>1663507554347</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663507554347</updated>
+      <workItem from="1663507555987" duration="2060000" />
+      <workItem from="1663509691849" duration="2987000" />
+      <workItem from="1663558167917" duration="12000" />
+      <workItem from="1663582293934" duration="837000" />
+      <workItem from="1663596683230" duration="16000" />
+      <workItem from="1663599537250" duration="1410000" />
+      <workItem from="1663601020826" duration="50000" />
+      <workItem from="1663601205102" duration="120000" />
+      <workItem from="1663601432098" duration="1762000" />
+      <workItem from="1663636004185" duration="112000" />
+      <workItem from="1663636335515" duration="447000" />
+      <workItem from="1663643081241" duration="26000" />
+      <workItem from="1663644121930" duration="49000" />
+      <workItem from="1663655973727" duration="3357000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
