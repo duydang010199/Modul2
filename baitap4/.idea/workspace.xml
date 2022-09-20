@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73650eda-2d44-4d1f-b77d-70b222204252" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baitap4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/HCN/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/HCN/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/PTbac2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/PTbac2/QuadraticEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/StopWatch/StopWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../baitapLoop/src/DemoTuyenTinh/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../baitapLoop/src/DemoTuyenTinh/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../baitapLoop/src/DemoTuyenTinh/LocalClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../baitapLoop/src/Student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../baitapLoop/src/Student/StudentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baitap5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Baitap5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baitap_2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,6 +51,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -67,6 +66,21 @@
       <workItem from="1663213312150" duration="13604000" />
       <workItem from="1663292475280" duration="856000" />
       <workItem from="1663295436610" duration="2756000" />
+      <workItem from="1663322109433" duration="440000" />
+      <workItem from="1663322727437" duration="105000" />
+      <workItem from="1663323238861" duration="21000" />
+      <workItem from="1663323408728" duration="658000" />
+      <workItem from="1663466206574" duration="12000" />
+      <workItem from="1663485848124" duration="1079000" />
+      <workItem from="1663487434373" duration="1360000" />
+      <workItem from="1663509669688" duration="21000" />
+      <workItem from="1663574939038" duration="3464000" />
+      <workItem from="1663578884190" duration="1759000" />
+      <workItem from="1663600960022" duration="14000" />
+      <workItem from="1663636787917" duration="1139000" />
+      <workItem from="1663642843066" duration="38000" />
+      <workItem from="1663642982365" duration="5000" />
+      <workItem from="1663643737758" duration="40000" />
     </task>
     <servers />
   </component>
