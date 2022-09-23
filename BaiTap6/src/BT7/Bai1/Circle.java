@@ -1,9 +1,12 @@
-package ThucHanh;
+package BT7.Bai1;
 
-public class Circle extends Shape {
-    private double radius = 1.0;
+import ThucHanh.Shape;
+
+public class Circle extends Shape implements Resizeable {
+    public double radius;
 
     public Circle(){
+        this.radius = 1.0;
     }
 
     public Circle(double radius){
@@ -37,5 +40,10 @@ public class Circle extends Shape {
                 + getRadius()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        this.radius = radius * (100 + percent) / 100;
     }
 }

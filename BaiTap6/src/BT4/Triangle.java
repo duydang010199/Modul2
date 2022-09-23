@@ -47,6 +47,6 @@ public class Triangle extends Shape {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Tam giac co 3 canh " + side1 + ", " + side2 + ", " + side3 + ", "+"dien tich la " + getArea() + "chu vi la " + getPerimeter();
     }
 }
