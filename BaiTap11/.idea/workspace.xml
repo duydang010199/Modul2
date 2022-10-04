@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f8f25041-4e66-4696-9ea3-d0d84192b6b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BaiTap11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai1/DangChuoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai1/DangSoNguyen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai2/DemTu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai3/UseQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai4/ThapPhanSangNhiPhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai5/Palindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuchanh1/GenericStackClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuchanh1/MyGenericStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuchanh2/LinkedListQueueClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuchanh2/MyLinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuchanh2/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuchanh3/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thuchanh4/MyStack.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FZOwX4NMobmcjKIrljEQjFMTXm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8f25041-4e66-4696-9ea3-d0d84192b6b9" name="Changes" comment="" />
+      <created>1664696380370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664696380370</updated>
+      <workItem from="1664696381793" duration="9270000" />
+      <workItem from="1664759952973" duration="10000" />
+      <workItem from="1664759990175" duration="798000" />
+      <workItem from="1664771918997" duration="58000" />
+      <workItem from="1664782290957" duration="37000" />
+      <workItem from="1664791325224" duration="100000" />
+      <workItem from="1664806898934" duration="610000" />
+      <workItem from="1664807686559" duration="575000" />
+      <workItem from="1664808383913" duration="1822000" />
+      <workItem from="1664810267567" duration="155000" />
+      <workItem from="1664810623258" duration="957000" />
+      <workItem from="1664845434763" duration="383000" />
+      <workItem from="1664847119054" duration="6621000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
