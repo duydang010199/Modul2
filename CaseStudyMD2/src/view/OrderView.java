@@ -96,40 +96,40 @@ public class OrderView {
 
 //                orderItemServices.findAllOrderItem();
 //                productView.showProductList();
-                Long id = System.currentTimeMillis() % 100000;
-                System.out.println("Nhập Id sản phẩm bạn muốn mua");
-                System.out.print("  ⭆ ");
-                Long idProduct = Long.parseLong(scanner.nextLine());
-                while (!productServices.exitsById(idProduct)) {
-                    System.out.println("Id sản phẩm không tồn tại! Vui lòng nhập lại");
-                    System.out.print("  ⭆ ");
-                    idProduct = Long.parseLong(scanner.nextLine());
-                }
-                Product product = productServices.checkId(idProduct);
-                Double price = product.getPrice();
-                System.out.println("Nhập số lượng bạn muốn mua");
-                System.out.print("  ⭆ ");
-                Double quantity = Double.parseDouble(scanner.nextLine());
-                while (!checkQuantityProduct(product, quantity)) {
-                    System.out.println("Số lượng sản phẩm không đủ! Vui lòng chọn lại");
-                    System.out.print("  ⭆ ");
-                    quantity = Double.parseDouble(scanner.nextLine());
-                    if (product.getQuantity() == 0) {
-                        System.out.println("Sản phẩm hết hàng");
-                        int choose;
-                        do {
-                            System.out.println("Nhấn '0' để quay lại");
-                            choose = AppUtils.retryParseInt();
-                        } while (choose != 0);
-                        Menu.orderMenu();
-                    }
-                }
-                String nameProduct = product.getName();
-                Double total = quantity * price;
-                Double grandTotal = 0.0;
-                OrderItem orderItem = new OrderItem(id, price, quantity, idOrder, idProduct, nameProduct, total, grandTotal);
-                productServices.updateQuantity(idProduct, quantity);
-                return orderItem;
+        Long id = System.currentTimeMillis() % 100000;
+        System.out.println("Nhập Id sản phẩm bạn muốn mua");
+        System.out.print("  ⭆ ");
+        Long idProduct = Long.parseLong(scanner.nextLine());
+        while (!productServices.exitsById(idProduct)) {
+            System.out.println("Id sản phẩm không tồn tại! Vui lòng nhập lại");
+            System.out.print("  ⭆ ");
+            idProduct = Long.parseLong(scanner.nextLine());
+        }
+        Product product = productServices.checkId(idProduct);
+        Double price = product.getPrice();
+        System.out.println("Nhập số lượng bạn muốn mua");
+        System.out.print("  ⭆ ");
+        Double quantity = Double.parseDouble(scanner.nextLine());
+        while (!checkQuantityProduct(product, quantity)) {
+            System.out.println("Số lượng sản phẩm không đủ! Vui lòng chọn lại");
+            System.out.print("  ⭆ ");
+            quantity = Double.parseDouble(scanner.nextLine());
+            if (product.getQuantity() == 0) {
+                System.out.println("Sản phẩm hết hàng");
+                int choose;
+                do {
+                    System.out.println("Nhấn '0' để quay lại");
+                    choose = AppUtils.retryParseInt();
+                } while (choose != 0);
+                Menu.orderMenu();
+            }
+        }
+        String nameProduct = product.getName();
+        Double total = quantity * price;
+        Double grandTotal = 0.0;
+        OrderItem orderItem = new OrderItem(id, price, quantity, idOrder, idProduct, nameProduct, total, grandTotal);
+        productServices.updateQuantity(idProduct, quantity);
+        return orderItem;
     }
 
     public static boolean checkQuantityProduct(Product product, Double quantity) {
@@ -217,109 +217,111 @@ public class OrderView {
     }
 
     public static void showListOrder() {
+        List<Order> orders = oderServices.findAllOrder();
+        List<OrderItem> orderItems = orderItemServices.findAllOrderItem();
+        int count = 0;
+        double printTotal = 0;
+        double total = 0;
+        double grandTotal = 0;
+        System.out.println();
+        System.out.println("═══════════════════════════════════════════════════════════════════════ Danh Sách Hóa Đơn ══════════════════════════════════════════════════════════════════════════════════════════════════════════");
+        for (Order order : orders) {
+            System.out.println("\t╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
+            System.out.printf("\t║\t%-20s %-50s %-20s %-47s║\n", "Id            : ", order.getIdOder(), "Tên khách hàng :", order.getName());
+            System.out.printf("\t║\t%-20s %-50s %-20s %-47s║\n", "Số điện thoại : ", order.getNumberPhone(), "Địa chỉ        : ", order.getAddress());
+            System.out.println("\t╠═══════╤═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣");
+            System.out.printf("\t║\t%-2s │%-10s %-25s %-10s %-20s %-10s %-20s %-10s %-23s║\n", "STT", "", "Tên Sản Phẩm", "", "Số Lượng", "", "Giá", "", "Tổng Tiền Sản Phẩm");
+            System.out.println("\t╟───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢");
+            for (OrderItem itemOrder : orderItems) {
+                if (itemOrder.getIdOrder().equals(order.getIdOder())) {
+                    count++;
+                    total = itemOrder.getPrice() * itemOrder.getQuantity();
+                    System.out.printf("\t║\t%-3s │%-10s %-25s %-10s %-20s %-10s %-20s %-10s %-23s║\n",
+                            count, "",
+                            itemOrder.getNameProduct(), "",
+                            InstantUtils.quantityProducts(itemOrder.getQuantity()), "",
+                            InstantUtils.doubleToVND(itemOrder.getPrice()), "",
+                            InstantUtils.doubleToVND(total));
+                    grandTotal += total;
+                }
+            }
+            printTotal += grandTotal;
+            System.out.printf("\t╚═══════╧════════════════════════════════════════════════════════════════════════════════════════════════ Tổng Hóa Đơn:  %15s ═══════╝\n\n\n", InstantUtils.doubleToVND(grandTotal));
+            grandTotal = 0;
+            count = 0;
+        }
+        System.out.println("\t\t\t\t\t\t\t╔════════════════════════════════════════════════════════════════╗");
+        System.out.printf("\t\t\t\t\t\t\t╟───────────── Tổng Doanh Thu: %20s ─────────────╢\n", InstantUtils.doubleToVND(printTotal));
+        System.out.println("\t\t\t\t\t\t\t╚════════════════════════════════════════════════════════════════╝\n");
+        int choice;
+        do {
+            System.out.println("Nhấn 0 để quay lại quản lý sản phẩm.");
+            System.out.print("=> ");
+            choice = AppUtils.retryParseInt();
+        } while (choice != 0);
+        Menu.orderMenu();
+    }
+}
+
 //        List<Order> orders = oderServices.findAllOrder();
 //        List<OrderItem> orderItems = orderItemServices.findAllOrderItem();
-//        int count = 0;
-//        double printTotal = 0;
-//        double total = 0;
-//        double grandTotal = 0;
-//        System.out.println();
-//        System.out.println("═══════════════════════════════════════════════════════════════════════ Danh Sách Hóa Đơn ══════════════════════════════════════════════════════════════════════════════════════════════════════════");
-//        for (Order order : orders) {
-//            System.out.println("\t╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
-//            System.out.printf("\t║\t%-20s %-50s %-20s %-47s║\n", "Id            : ", order.getIdOder(), "Tên khách hàng :", order.getName());
-//            System.out.printf("\t║\t%-20s %-50s %-20s %-47s║\n", "Số điện thoại : ", order.getNumberPhone(), "Địa chỉ        : ", order.getAddress());
-//            System.out.println("\t╠═══════╤═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣");
-//            System.out.printf("\t║\t%-2s │%-10s %-25s %-10s %-20s %-10s %-20s %-10s %-23s║\n", "STT", "", "Tên Sản Phẩm", "", "Số Lượng", "", "Giá", "", "Tổng Tiền Sản Phẩm");
-//            System.out.println("\t╟───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢");
-//            for (OrderItem itemOrder : orderItems) {
-//                if (itemOrder.getIdOrder().equals(order.getIdOder())) {
-//                    count++;
-//                    total = itemOrder.getPrice() * itemOrder.getQuantity();
-//                    System.out.printf("\t║\t%-3s │%-10s %-25s %-10s %-20s %-10s %-20s %-10s %-23s║\n",
-//                            count, "",
-//                            itemOrder.getNameProduct(), " ",
-//                            InstantUtils.quantityProducts(itemOrder.getQuantity()), " ",
-//                            InstantUtils.doubleToVND(itemOrder.getPrice()), "",
-//                            InstantUtils.doubleToVND(total));
-//                    grandTotal += total;
+//        OrderItem newOrderItem = new OrderItem();
+//        List<OrderItem> orderItemList = new ArrayList<>();
+//        try {
+//            int count = 0;
+//            double printTotal = 0;
+//            double total = 0;
+//            double sum = 0;
+//            double grandTotal = 0;
+//            System.out.println();
+//            System.out.println("═══════════════════════════════════════════════════════════════════════ Danh Sách Hóa Đơn ══════════════════════════════════════════════════════════════════════════════════════════════════════════");
+//            for (Order order : orders) {
+//                for (OrderItem orderItem : orderItems) {
+//                    if (orderItem.getIdOrder() == order.getIdOder()) {
+//                        newOrderItem = orderItem;
+//                        orderItemList.add(newOrderItem);
+//                        double price = orderItem.getPrice();
+//                        double quantity = orderItem.getQuantity();
+//                        sum = price * quantity;
+//                        grandTotal += sum;
+//                    }
 //                }
+//                newOrderItem.setGranTotal(grandTotal);
+//                orderItemServices.update(newOrderItem.getIdOrder(), newOrderItem.getPrice(), grandTotal);
+//                System.out.println("\t╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
+//                System.out.printf("\t║\t%-20s %-50s %-20s %-47s║\n", "Id            : ", order.getIdOder(), "Tên khách hàng :", order.getName());
+//                System.out.printf("\t║\t%-20s %-50s %-20s %-47s║\n", "Số điện thoại : ", order.getNumberPhone(), "Địa chỉ        : ", order.getAddress());
+//                System.out.println("\t╠═══════╤═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣");
+//                System.out.printf("\t║\t%-2s │%-10s %-25s %-10s %-20s %-10s %-20s %-10s %-23s║\n", "STT", "", "Tên Sản Phẩm", "", "Số Lượng", "", "Giá", "", "Tổng Tiền Sản Phẩm");
+//                System.out.println("\t╟───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢");
+//                for (OrderItem orderItem : orderItemList) {
+//                    count++;
+//                    total = orderItem.getPrice() * orderItem.getQuantity();
+//                    System.out.printf("\t│\t%-3d │%-1s%-20s%-20s%-10s%-15s%-15d%-10s%-18s%-11s%14s\t│\n", count, "", "", orderItem.getNameProduct(), " ", "", orderItem.getQuantity()
+//                            , "", InstantUtils.doubleToVND(orderItem.getPrice())
+//                            , "", InstantUtils.doubleToVND(total));
+//                }
+//                orderItemList.clear();
 //                printTotal += grandTotal;
 //                System.out.printf("\t╚═══════╧════════════════════════════════════════════════════════════════════════════════════════════════ Tổng Hóa Đơn:  %15s ═══════╝\n\n\n", InstantUtils.doubleToVND(grandTotal));
+//                sum = 0;
 //                grandTotal = 0;
 //                count = 0;
+//
 //            }
 //            System.out.println("\t\t\t\t\t\t\t╔════════════════════════════════════════════════════════════════╗");
 //            System.out.printf("\t\t\t\t\t\t\t╟───────────── Tổng Doanh Thu: %20s ─────────────╢\n", InstantUtils.doubleToVND(printTotal));
 //            System.out.println("\t\t\t\t\t\t\t╚════════════════════════════════════════════════════════════════╝\n");
-//            int choice;
+//            int choose;
 //            do {
-//                System.out.println("Nhấn 0 để quay lại quản lý sản phẩm.");
-//                System.out.print("=> ");
-//                choice = AppUtils.retryParseInt();
-//            } while (choice != 0);
+//                System.out.println("Nhấn '0' để quay lại");
+//                System.out.print("  ⭆ ");
+//                choose = AppUtils.retryParseInt();
+//            } while (choose != 0);
 //            Menu.orderMenu();
+//        } catch (Exception e) {
+//            System.out.println("Không đúng! Vui lòng nhập lại!");
 //        }
 //    }
-        List<Order> orders = oderServices.findAllOrder();
-        List<OrderItem> orderItems = orderItemServices.findAllOrderItem();
-        OrderItem newOrderItem = new OrderItem();
-        List<OrderItem> orderItemList = new ArrayList<>();
-        try {
-            int count = 0;
-            double printTotal = 0;
-            double total = 0;
-            double sum = 0;
-            double grandTotal = 0;
-            System.out.println();
-            System.out.println("═══════════════════════════════════════════════════════════════════════ Danh Sách Hóa Đơn ══════════════════════════════════════════════════════════════════════════════════════════════════════════");
-            for (Order order : orders) {
-                for (OrderItem orderItem : orderItems) {
-                    if (orderItem.getIdOrder() == order.getIdOder()) {
-                        newOrderItem = orderItem;
-                        orderItemList.add(newOrderItem);
-                        double price = orderItem.getPrice();
-                        double quantity = orderItem.getQuantity();
-                        sum = price * quantity;
-                        grandTotal += sum;
-                    }
-                }
-                newOrderItem.setGranTotal(grandTotal);
-                orderItemServices.update(newOrderItem.getIdOrder(), newOrderItem.getPrice(), grandTotal);
-                System.out.println("\t╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
-                System.out.printf("\t║\t%-20s %-50s %-20s %-47s║\n", "Id            : ", order.getIdOder(), "Tên khách hàng :", order.getName());
-                System.out.printf("\t║\t%-20s %-50s %-20s %-47s║\n", "Số điện thoại : ", order.getNumberPhone(), "Địa chỉ        : ", order.getAddress());
-                System.out.println("\t╠═══════╤═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣");
-                System.out.printf("\t║\t%-2s │%-10s %-25s %-10s %-20s %-10s %-20s %-10s %-23s║\n", "STT", "", "Tên Sản Phẩm", "", "Số Lượng", "", "Giá", "", "Tổng Tiền Sản Phẩm");
-                System.out.println("\t╟───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢");
-                for (OrderItem orderItem : orderItemList) {
-                    count++;
-                    total = orderItem.getPrice() * orderItem.getQuantity();
-                    System.out.printf("\t│\t%-3d │%-1s%-20s%-20s%-10s%-15s%-15d%-10s%-18s%-11s%14s\t│\n", count, "", "", orderItem.getNameProduct(), " ", "", orderItem.getQuantity()
-                            , "", InstantUtils.doubleToVND(orderItem.getPrice())
-                            , "", InstantUtils.doubleToVND(total));
-                }
-                orderItemList.clear();
-                printTotal += grandTotal;
-                System.out.printf("\t╚═══════╧════════════════════════════════════════════════════════════════════════════════════════════════ Tổng Hóa Đơn:  %15s ═══════╝\n\n\n", InstantUtils.doubleToVND(grandTotal));
-                sum = 0;
-                grandTotal = 0;
-                count = 0;
 
-            }
-            System.out.println("\t\t\t\t\t\t\t╔════════════════════════════════════════════════════════════════╗");
-            System.out.printf("\t\t\t\t\t\t\t╟───────────── Tổng Doanh Thu: %20s ─────────────╢\n", InstantUtils.doubleToVND(printTotal));
-            System.out.println("\t\t\t\t\t\t\t╚════════════════════════════════════════════════════════════════╝\n");
-            int choose;
-            do {
-                System.out.println("Nhấn '0' để quay lại");
-                System.out.print("  ⭆ ");
-                choose = AppUtils.retryParseInt();
-            } while (choose != 0);
-            Menu.orderMenu();
-        } catch (Exception e) {
-            System.out.println("Không đúng! Vui lòng nhập lại!");
-        }
-    }
 
-}
