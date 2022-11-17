@@ -63,14 +63,14 @@
                                     </p>
                                     <p>
                                         <label for="validationServer04" class="form-label">Description</label>
-                                        <input type="text" class="form-control is-valid" id="validationServer04" name="price" value="${requestScope.product.getDescription()}" required>
+                                        <input type="text" class="form-control is-valid" id="validationServer04" name="description" value="${requestScope.product.getDescription()}" required>
                                     </p>
                                     <p>
                                     <div>
                                         <div style="display: flex"><label>Category</label></div>
                                         <div style="display: flex">
                                             <select name="idcategory">
-                                                <c:forEach items="${applicationScope.listCategory}" var="category">
+                                                <c:forEach items="${listCategory}" var="category">
                                                     <option <c:if test="${category.getId() == product.getIdCategory()}">selected</c:if> value="${category.getId()}">
                                                         ${category.getName()}
                                                     </option>

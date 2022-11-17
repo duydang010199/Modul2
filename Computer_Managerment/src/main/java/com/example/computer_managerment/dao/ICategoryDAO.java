@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ICategoryDAO {
     public void insertCategory(Category category);
-    public Category selectCategory(int id);
+//    public Category selectCategory(int id);
     public List<Category> selectAllCategory();
     public boolean updateCategory(Category category);
     public boolean deleteCategory(int id);

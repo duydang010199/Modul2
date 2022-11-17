@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-@WebServlet(name = "ProductsServlet", urlPatterns = {"/product", ""})
+@WebServlet(name = "ProductsServlet", urlPatterns = "/product")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, // 2MB
         maxFileSize = 1024 * 1024 * 50, // 50MB
         maxRequestSize = 1024 * 1024 * 50) // 50MB
@@ -174,7 +174,6 @@ public class ProductsServlet extends HttpServlet {
             double price = Double.parseDouble(req.getParameter("price"));
             product.setPrice(price);
             String image = req.getParameter("file");
-            product.setImage(image);
             int quantity = Integer.parseInt(req.getParameter("quantity"));
             product.setQuantity(quantity);
             String description = req.getParameter("description");
@@ -200,10 +199,10 @@ public class ProductsServlet extends HttpServlet {
                             String fileName = extractFileName(part);
                             if (fileName != null && !fileName.isEmpty()) {
                                 fileName = new File(fileName).getName();
-                                part.write("C:\\Users\\ADMIN\\OneDrive\\Máy tính\\Modul2\\Computer_Managerment\\src\\main\\webapp\\image-load/" + fileName);
-                                String servletRealPath = this.getServletContext().getRealPath("/") + "image\\" + fileName;
+                                part.write("C:\\Users\\ADMIN\\OneDrive\\Máy tính\\Modul2\\Computer_Managerment\\src\\main\\webapp\\image-load\\" + fileName);
+                                String servletRealPath = this.getServletContext().getRealPath("\\") + "\\" + "image-load\\" + fileName;
                                 part.write(servletRealPath);
-                                product.setImage("image/" + fileName);
+                                product.setImage("\\image-load\\" + fileName);
                                 part.write(this.getFolderUpload().getAbsolutePath() + File.separator + fileName);
                             }
                         }
@@ -217,8 +216,9 @@ public class ProductsServlet extends HttpServlet {
                 }
             }
         }
-        requestDispatcher = req.getRequestDispatcher("/WEB-INF/product/edit.jsp");
-        requestDispatcher.forward(req, resp);
+        resp.sendRedirect("/product");
+//        requestDispatcher = req.getRequestDispatcher("/WEB-INF/product/edit.jsp");
+//        requestDispatcher.forward(req, resp);
     }
 
     public File getFolderUpload() {
@@ -275,9 +275,9 @@ public class ProductsServlet extends HttpServlet {
                         if (fileName != null && !fileName.isEmpty()) {
                             fileName = new File(fileName).getName();
                             part.write("C:\\Users\\ADMIN\\OneDrive\\Máy tính\\Modul2\\Computer_Managerment\\src\\main\\webapp\\image-load\\" + fileName);
-                            String servletRealPath = this.getServletContext().getRealPath("/") + "image-load\\" + fileName;
+                            String servletRealPath = this.getServletContext().getRealPath("\\")+"\\" + "image-load\\" + fileName;
                             part.write(servletRealPath);
-                            product.setImage("image-load\\" + fileName);
+                            product.setImage("\\image-load\\" + fileName);
                             part.write(this.getFolderUpload().getAbsolutePath() + File.separator + fileName);
                         } else {
                             product.setImage(null);

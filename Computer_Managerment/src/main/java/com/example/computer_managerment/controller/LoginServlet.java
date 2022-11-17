@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "LoginServlet", urlPatterns = "/login")
+@WebServlet(name = "LoginServlet", urlPatterns = {"/login", ""})
 public class LoginServlet extends HttpServlet {
     private IAccountDAO iAccountDAO;
     private ICountryDAO iCountryDAO;

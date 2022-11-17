@@ -11,7 +11,7 @@ import java.util.List;
 
 public class CategoryDAO extends DatabaseContext implements ICategoryDAO{
     private static final String INSERT_CATEGORY_SQL = "INSERT INTO category (name) VALUES (?);";
-    private static final String SELECT_CATEGORY_BY_ID = "SELECT * FROM category WHERE idcategory =?;";
+    private static final String SELECT_CATEGORY_BY_ID = "SELECT * FROM category WHERE idcategory = ?;";
     private static final String SELECT_ALL_CATEGORY = "SELECT * FROM category;";
     private static final String UPDATE_CATEGORY_SQL = "UPDATE category SET name = ? WHERE idcategory = ?;";
     private static final String DELETE_CATEGORY_SQL = "DELETE FROM category WHERE idcategory = ?;";
@@ -29,24 +29,24 @@ public class CategoryDAO extends DatabaseContext implements ICategoryDAO{
         }
     }
 
-    @Override
-    public Category selectCategory(int id) {
-        Category category = null;
-        try {
-            Connection connection = getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CATEGORY_BY_ID);
-            preparedStatement.setInt(1, id);
-            System.out.println(this.getClass() + " selectCategory " + preparedStatement);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                String name = resultSet.getString("name");
-                category = new Category(id, name);
-            }
-        } catch (SQLException e){
-            printSQLException(e);
-        }
-        return category;
-    }
+//    @Override
+//    public Category selectCategory(int id) {
+//        Category category = null;
+//        try {
+//            Connection connection = getConnection();
+//            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CATEGORY_BY_ID);
+//            preparedStatement.setInt(1, id);
+//            System.out.println(this.getClass() + " selectCategory " + preparedStatement);
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//            while (resultSet.next()) {
+//                String name = resultSet.getString("name");
+//                category = new Category(id, name);
+//            }
+//        } catch (SQLException e){
+//            printSQLException(e);
+//        }
+//        return category;
+//    }
 
     @Override
     public List<Category> selectAllCategory() {
@@ -104,12 +104,23 @@ public class CategoryDAO extends DatabaseContext implements ICategoryDAO{
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CATEGORY_BY_ID);
             preparedStatement.setInt(1, id);
+//            ResultSet resultSet = preparedStatement.executeQuery();
+
             ResultSet resultSet = preparedStatement.executeQuery();
-            int idCategory = resultSet.getInt("idcategory");
-            String name = resultSet.getString("name");
-            category = new Category(idCategory, name);
+            while (resultSet.next()) {
+                int idCategory = resultSet.getInt("idcategory");
+                String name = resultSet.getString("name");
+                category = new Category(idCategory, name);
+
+            }
+
+//            int idCategory = resultSet.getInt("idcategory");
+//            System.out.println("id" + idCategory);
+//            String name = resultSet.getString("name");
+//            System.out.println("name" + name);
+//            category = new Category(idCategory, name);
         } catch (SQLException e){
-            printSQLException(e);
+            e.printStackTrace();
         }
         return category;
     }

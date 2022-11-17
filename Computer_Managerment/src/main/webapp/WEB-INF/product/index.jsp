@@ -74,7 +74,9 @@
                                 <img class="zoom" src="${(product.getImage() != null) ? product.getImage():"https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpg"}">
                             </td>
                             <td class="text-right">
-                                <fmt:formatNumber pattern="#,##0" value="${product.getPrice()}" />
+                                <fmt:setLocale value="en_US"/>
+                                <fmt:formatNumber value="${product.getPrice()}" type="currency"/>
+<%--                                <fmt:formatNumber pattern="#,##0" value="${product.getPrice()}" />--%>
                             </td>
                             <td class="text-right"><c:out value="${product.getQuantity()}"/></td>
                             <td><c:out value="${product.getDescription()}"/></td>
@@ -94,9 +96,7 @@
                                 <a>
                                     <button class="btn btn-danger rounded handleDeleted" onclick="handleDeleted(${product.idProduct})">
                                         <i class="mdi mdi-delete">Delete</i>
-
                                     </button>
-
                                 </a>
                             </td>
                         </tr>
